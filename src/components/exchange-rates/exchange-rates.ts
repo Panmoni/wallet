@@ -39,6 +39,9 @@ export class ExchangeRates {
     private logger: Logger
   ) {
     const availableChains = this.currencyProvider.getAvailableChains();
+    _.remove(availableChains,(e) => {
+      return e == 'btc' || e == 'xrp' || e == 'eth';
+    });
     for (const coin of availableChains) {
       const {
         backgroundColor,

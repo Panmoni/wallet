@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "687087162280",
+    "firebase_url": "https://panmoni-45e2d.firebaseio.com",
+    "project_id": "panmoni-45e2d",
+    "storage_bucket": "panmoni-45e2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687087162280:android:a8f993d19c48acb22a039d",
+        "android_client_info": {
+          "package_name": "com.panmoni.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687087162280-o2kvjukrelgpcevgptsbeut3ajrr25at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7z2bMPq6aAv6ZMX3eOjcOtAJhX4FOAxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687087162280-o2kvjukrelgpcevgptsbeut3ajrr25at.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

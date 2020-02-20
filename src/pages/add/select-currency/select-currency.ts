@@ -73,7 +73,13 @@ export class SelectCurrencyPage {
     this.availableChains = this.navParam.data.isShared
       ? this.currencyProvider.getMultiSigCoins()
       : this.currencyProvider.getAvailableChains();
+    _.remove(this.availableChains,(e) => {
+      return e == 'btc' || e == 'xrp' || e == 'eth';
+    });
     this.availableTokens = this.currencyProvider.getAvailableTokens();
+    _.remove(this.availableTokens,(e) => {
+      return e.symbol == 'USDC' || e.symbol == 'PAX' || e.symbol == 'GUSD';
+    });
     for (const chain of this.availableChains) {
       this.coinsSelected[chain] = true;
     }

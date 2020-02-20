@@ -383,6 +383,9 @@ export class HomePage {
 
   private getLastWeekRates(): Promise<any> {
     const availableChains = this.currencyProvider.getAvailableChains();
+    _.remove(availableChains,(e) => {
+      return e == 'btc' || e == 'xrp' || e == 'eth';
+    });
     const getHistoricalRate = unitCode => {
       return new Promise(resolve => {
         this.exchangeRatesProvider
